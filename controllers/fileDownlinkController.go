@@ -5,8 +5,6 @@ import (
 	"os"
 	"strconv"
 
-	//"path/filepath"
-
 	"github.com/gin-gonic/gin"
 	"github.com/prakyy/Go-Drive/initializers"
 	"github.com/prakyy/Go-Drive/models"
