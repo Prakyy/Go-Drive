@@ -8,9 +8,9 @@ import (
 )
 
 func init() {
-	initializers.LoadEnvVariables()
-	initializers.ConnectToDb()
-	initializers.SyncDatabase()
+	initializers.LoadEnv()
+	initializers.LinkDB()
+	initializers.SyncDB()
 }
 
 func main() {
@@ -21,5 +21,6 @@ func main() {
 	r.POST("/upload", middleware.RequireAuth, controllers.UploadFile)
 	r.GET("/files/:file_id", middleware.RequireAuth, controllers.GetFile)
 	r.DELETE("/delete/:file_id", middleware.RequireAuth, controllers.DeleteFile)
+	r.GET("/search", middleware.RequireAuth, controllers.SearchFile)
 	r.Run() // localhost:3000
 }
