@@ -3,6 +3,7 @@ s3bucket/
 
 # Ignore Go binaries
 *.exe
+*.exe~
 *.out
 *.dll
 *.so
