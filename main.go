@@ -20,5 +20,6 @@ func main() {
 	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
 	r.POST("/upload", middleware.RequireAuth, controllers.UploadFile)
 	r.GET("/files/:file_id", middleware.RequireAuth, controllers.GetFile)
+	r.DELETE("/delete/:file_id", middleware.RequireAuth, controllers.DeleteFile)
 	r.Run() // localhost:3000
 }
