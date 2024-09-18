@@ -1,0 +1,24 @@
+# Ignore the s3bucket directory
+s3bucket/
+
+# Ignore Go binaries
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Ignore Go build artifacts
+/build/
+dist/
+
+# Ignore dependency directories
+vendor/
+
+# Ignore .env files (if you have sensitive environment variables)
+.env
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
