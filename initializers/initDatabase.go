@@ -20,7 +20,6 @@ func LinkDB() {
 		log.Fatal("Failed to connect to DB")
 	}
 	fmt.Println("1/3 ✅ Database connection successful")
-	//fmt.Print(DB)
 }
 
 func SyncDB() {

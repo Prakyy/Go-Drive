@@ -18,8 +18,8 @@ func main() {
 	r.POST("/signup", controllers.Signup)
 	r.POST("/login", controllers.Login)
 	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
-	r.POST("/upload", middleware.RequireAuth, controllers.UploadFile)
-	r.GET("/files/:file_id", middleware.RequireAuth, controllers.GetFile)
+	r.POST("/upload", middleware.RequireAuth, controllers.ReceiveFile)
+	r.GET("/files/:file_id", middleware.RequireAuth, controllers.ServeFile)
 	r.DELETE("/delete/:file_id", middleware.RequireAuth, controllers.DeleteFile)
 	r.GET("/search", middleware.RequireAuth, controllers.SearchFile)
 	r.Run() // localhost:3000
