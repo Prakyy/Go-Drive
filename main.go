@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	https://github.com/Prakyy/Go-Drive.git
+
 	"github.com/prakyy/Go-Drive/controllers"
 	"github.com/prakyy/Go-Drive/initializers"
 	"github.com/prakyy/Go-Drive/middleware"
